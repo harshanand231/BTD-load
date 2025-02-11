@@ -1,0 +1,5 @@
+datasets/
+pred/
+uploads/
+BrainTumour10Epochs.keras/
+.start
