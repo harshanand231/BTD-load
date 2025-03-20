@@ -3,3 +3,4 @@ pred/
 uploads/
 BrainTumour10Epochs.keras/
 .start
+static/bootstrap/
