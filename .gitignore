@@ -1,8 +1,2 @@
-datasets/
-pred/
-uploads/
-BrainTumour10Epochs.keras/
-.start
-static/bootstrap/
 .env
 echo ".env" >> .gitignore.env
