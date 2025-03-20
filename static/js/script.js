@@ -48,9 +48,9 @@ document.getElementById('resetUpload').addEventListener('click', function () {
 function previewImage(event) {
     var reader = new FileReader();
     reader.onload = function() {
-        var output = document.getElementById('preview-image');
-        output.src = reader.result;
-        output.style.display = 'block'; // Show the image
+        var output = document.getElementById("preview-image");
+        img.src = reader.result;
+        img.style.display = 'block'; // Show the image
     };
     reader.readAsDataURL(event.target.files[0]);
 }
@@ -235,10 +235,10 @@ function sendOTP() {
     // Change this to your email sending function
     Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "swastikathakur2345@gmail.com",
-        Password : "EDD596B2EBB19FC54C7F960BF292A051508F",
+        Username : "harshanand849@gmail.com",
+        Password : "BCCA199BA3D72925260DDAAD308C437884C3",
         To : document.getElementById('email').value,
-        From : "swastikathakur2345@gmail.com",
+        From : "harshanand849@gmail.com",
         Subject : "OTP for Password Reset",
         Body : "Your OTP is: " + storedOTP,
     }).then(
