@@ -1,50 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brain Tumor Detection</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Brain Tumor Detection</h1>
+## 📌Topic
+Brain Tumor Detection
 
-        <h2>Overview</h2>
-        <p>This project implements a deep learning model for detecting brain tumors using MRI scans. The model is trained using Convolutional Neural Networks (CNNs) and deployed as a Flask API for easy inference.</p>
+## Overview
 
-        <h2>Features</h2>
-        <ul>
-            <li><b>Deep Learning Model:</b> CNN-based image classification.</li>
-            <li><b>Preprocessing:</b> Image normalization and augmentation.</li>
-            <li><b>Training & Evaluation:</b> TensorFlow/Keras with accuracy and loss tracking.</li>
-            <li><b>Deployment:</b> Flask API for predictions.</li>
-        </ul>
+This project implements a deep learning model for detecting brain tumors using MRI scans. The model is trained using Convolutional Neural Networks (CNNs) and deployed as a Flask API for easy inference.
 
-        <h2>Technologies Used</h2>
-        <p>Python, TensorFlow/Keras, OpenCV, Flask, PostgreSQL (optional), React.js (for UI)</p>
+## Getting Started
 
-        <h2>Installation</h2>
-        <pre>
-        git clone https://github.com/yourusername/brain-tumor-detection.git
-        cd brain-tumor-detection
-        pip install -r requirements.txt
-        python app.py
-        </pre>
+First, 
+fork the repo.
+then,
+run the development server:
 
-        <h2>Usage</h2>
-        <p>- Upload an MRI scan image via the Flask API.</p>
-        <p>- The model will analyze and predict if a tumor is present.</p>
-        <p>- The results will be displayed as JSON output.</p>
+```bash
+python app.py
+# or
+flask --app.py
+```
+## API Keys, Secret Keys
 
-        <h2>Future Enhancements</h2>
-        <ul>
-            <li>Improve accuracy with transfer learning.</li>
-            <li>Deploy a web-based UI using React.</li>
-        </ul>
+In .env file which in ignored in gitignore
 
-        <h2>License</h2>
-        <p>This project is licensed under the MIT License.</p>
-    </div>
-</body>
-</html>
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `templates/index.html in github i putted index.html outside because it was not rendeering from inside`.
+The page auto-updates as you edit the file
+
+## Features
+
+Deep Learning Model: CNN-based image classification.
+
+Preprocessing: Image normalization and augmentation.
+
+Training & Evaluation: TensorFlow/Keras with accuracy and loss tracking.
+
+Deployment: Flask API for predictions.
+
+## Technologies Used
+
+Python
+
+TensorFlow/Keras
+
+OpenCV
+
+Flask
+
+PostgreSQL (for login signup database)
+
+JavaScript, HTML, CSS, Bootstrap (for frontend UI)
+
+Google Developer Console for Sign-up with google
+
+### Installation
+
+Model Training
+
+Flask API for Prediction
+
+## Usage
+
+Upload an MRI scan image via the Flask API.
+
+The model will analyze and predict if a tumor is present.
+
+The results will be displayed as JSON output.
+
+Future Enhancements
+
+Improve accuracy with transfer learning.
+
+Deploy a web-based UI using React.
+
+License
+
+This project is licensed under the MIT License.
+## Acknowledgements
+
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+
+
+## API Reference
+
+#### Get all items
+
+```http
+  GET /api/items
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+#### Get item
+
+```http
+  GET /api/items/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+
+
+## Authors
+
+- [@harshanand231](https://www.github.com/harshanand231)
+
+## 🚀 About Me
+I'm a full stack developer...
